@@ -1,12 +1,10 @@
-
-let html =  '<button class="form__buttonProx">>Próxima</button>'
 let formList = document.querySelector(".form__list_questions");
 let formQuestions = document.querySelectorAll(".form__question")
-let btnPrev = document.querySelector('.form__buttonPrev')
-let btnNext = document.querySelector('.form__buttonProx')
 
 var current = 0;
 
+let btnPrev = document.querySelector('.form__buttonPrev')
+let btnNext = document.querySelector('.form__buttonProx')
 init()
 function init() {
     var show = formList.querySelectorAll('.show')
@@ -17,6 +15,12 @@ function init() {
     formQuestions[0].classList.add('show')
     btnPrev.removeAttribute('style')
     btnNext.removeAttribute('style')
+
+    if (formQuestions[0]) {
+        btnPrev.setAttribute('style', 'display: none;')
+    } else {
+        btnPrev.removeAttribute('style')
+    }
 
     addListeners()
 }
@@ -40,15 +44,16 @@ function showSlide() {
     var slide = current % qtd
     slide = Math.abs(slide)
 
+    if (formQuestions[slide] == formQuestions[0]) {
+        btnPrev.setAttribute('style', 'display: none;')
+    } else {
+        btnPrev.removeAttribute('style')
+    }
+    if (formQuestions[slide] == formQuestions[qtd-=1]) {
+        btnNext.setAttribute('style', 'display: none;')
+    } else {
+        btnNext.removeAttribute('style')
+    }
     formList.querySelector('.show').classList.remove('show')
     formQuestions[slide].classList.add('show')
 }
-
-
-/* for (let i = 0; i < formQuestion.length; i++) {
-    let button = formQuestion[i].querySelector('.form__buttonProx')
-    formQuestion[i].classList.add('.show')
-    button.addEventListener('click', () => {
-        formQuestion[i].classList
-    })
-} */

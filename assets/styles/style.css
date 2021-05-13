@@ -180,6 +180,7 @@ header {
     position: absolute;
     left: 50px;
     right: 50px;
+    z-index: -1;
 }
 .form__question h4 {
     font-weight: lighter;
@@ -191,13 +192,16 @@ header {
     background: transparent;
     color: #f1bf35;
 }
-.form__question {
+.form_questions_actions {
+    margin-top: 2vmax;
+    text-align: right;
+    width: 100%;
+}
+.form__list_qw {
     width: 100%;
     padding: 3vmax;
     background: rgba(0, 0, 0, 0.192);
     border-radius: 4vmax;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 3vmax;
 }
 .form__answer {
@@ -206,7 +210,7 @@ header {
 .form__answer input {
     color: #f1bf35;
 }
-.form__buttonProx {
+.form__buttonControl {
     width: 25%;
     background: none;
     border: none;
