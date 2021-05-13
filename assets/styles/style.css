@@ -204,7 +204,7 @@ header {
     padding: 3vmax;
     background: rgba(0, 0, 0, 0.192);
     border-radius: 4vmax;
-    margin-bottom: 3vmax;
+    margin: 3vmax 0;
 }
 .form__answer {
     font-size: 14px;
@@ -240,8 +240,8 @@ input[type=radio] + label, input[type=checkbox] + label {
 input[type=radio] + label::before, input[type=checkbox] + label::before{
     content: "";
     position: absolute;
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     left: 0;
     bottom: 0;
     border-radius: 50%;
@@ -254,8 +254,8 @@ input[type=radio]:checked + label::after, input[type=checkbox]:checked + label::
     position: absolute;
     left: 3px;
     bottom: 3px;
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
 }
 
@@ -378,10 +378,11 @@ footer {
         grid-row: 1;
     }
     .header__logo {
-        width: 100%;
+        width: 90%;
         margin-bottom: 0;
         grid-column: 2;
         grid-row: 1;
+        justify-self: center;
     }
     .header__content {
         align-self: center;
@@ -433,6 +434,7 @@ footer {
         background-size: 100%;
         background-repeat: no-repeat;
         width: 60%;
+        background-position: 0 30%;
         grid-column: 2;
         grid-row: 1;
     }
@@ -480,6 +482,7 @@ footer {
     .article__text2 .article__content p {
         margin-bottom: 0;
         margin-left: 2vmax;
+        font-size: 20px;
     }
     .article__text2 .article__image {
         background-image: url(../images/lua_.png);
@@ -494,7 +497,19 @@ footer {
         margin: 3vmax 0;
     }
     .article__text3 .article__list_t3 li{
-        display: flex;
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    .article__text3 .article__list_t3 h3 {
+        font-size: 20px;
+        padding-right: 1vmax;
+        border-right: 2px solid #ef6e79;
+        text-align: right;
+    }
+    .article__text3 .article__list_t3 p {
+        font-size: 20px;
+        text-align: left;
+        padding-left: 1vmax;
     }
     .article__list_t3 li hr{
         border-color: #ef6e79;
@@ -528,10 +543,11 @@ footer {
         width: 40%;
     }
     .form__list_qw {
-        padding: 1.5vmax 0;
         background: none;
         margin-bottom: 0;
-        padding: 1.5vmax 0;
+        padding: 0;
+        margin: 0;
+        margin-top: 3vmax;
     }
     .form__list_questions .form__question {
         opacity: 1;

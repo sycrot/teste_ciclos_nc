@@ -4,11 +4,9 @@
     let checkboxAnswers = document.getElementsByName('question4');
     var current = 0;
     let checks = 0
-    let arr = []
+
     checkboxAnswers.forEach(e => {
         e.addEventListener('click', () => {
-            arr.push(e)
-            arr.length = 2
             if (e.checked) { 
                 checks++ 
             } else { 
@@ -16,10 +14,8 @@
             }
             if (checks > 2) {
                 e.checked = false
-                checks = 2
-                arr[checks].checked = false
+                checks--
             }
-            console.log(checks)
         })
     })
 
