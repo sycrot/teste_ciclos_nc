@@ -1,0 +1,585 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    background: hsl(221, 17%, 48%);
+}
+
+header {
+    width: 100%;
+    padding: 4vmax;
+    text-align: center;
+    background-image: url("../images/fundo_topo_mobile.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    perspective: 2px;
+    transform-style: preserve-3d;
+}
+.header__title {
+    font-family: 'Jennerik', sans-serif;
+    color: #2c323e;
+    margin-bottom: 2vmax;
+}
+.header__logo {
+    width: 70%;
+    margin-bottom: 2vmax;
+    -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.233));
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.233));
+}
+.header__slogan {
+    color: #f1bf35;
+    font-size: 16px;
+    margin-bottom: 4vmax;
+    font-family: 'Jennerik', sans-serif;
+}
+.header__logo_dra {
+    width: 60%;
+    margin-bottom: 2vmax;
+}
+.header__description {
+    margin-bottom: 3vmax;
+}
+.header__description p {
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Ibarra Real Nova';
+}
+.header__description mark {
+    background-color: transparent;
+    color:#ef6e79;
+}
+
+
+.article__principal {
+    padding: 0 4vmax;
+    text-align: center;
+    background-image: url(../images/lua_.png), url(../images/flor_.png);
+    background-size: 15%, 10%;
+    background-position: -6% 20%, 98% 64%;
+    background-repeat: no-repeat;
+}
+.article__text1 p {
+    color: #f1bf35;
+    margin-bottom: 3vmax;
+    line-height: 1.3;
+    font-family: 'Ibarra Real Nova';
+    text-indent: -2vmax;
+}
+.article__text1 mark {
+    background-color: transparent;
+    color: #fff;
+}
+.article__text1 h2 {
+    color: #fff;
+    margin-bottom: 3vmax;
+    font-family: 'Ibarra Real Nova';
+}
+.article__text1 .text_2__lua {
+    width: 10%;
+    margin-bottom: 3vmax;
+}
+
+.article__text2 p {
+    color: #fff;
+    font-family: 'Jennerik', sans-serif;
+    margin-bottom: 3vmax;
+}
+.article__text2 mark {
+    background-color: transparent;
+    color: #f1bf35;
+}
+
+.article__list_t3 li{
+    font-family: 'Jennerik', sans-serif;
+    list-style-type: none;
+    margin-bottom: 2vmax;
+}
+.article__list_t3 h3 {
+    color: #ef6e79;
+}
+.article__list_t3 p {
+    color: #2c323e;
+}
+
+.article__text4 {
+    margin-bottom: 3vmax;
+}
+.article__text4 p {
+    color: #fff;
+    font-family: 'Jennerik', sans-serif;
+}
+.article__text4 mark {
+    background-color: transparent;
+    color: #f1bf35;
+}
+
+.section_form {
+    padding: 0 4vmax;
+    text-align: center;
+}
+.section__line {
+    width: 100%;
+    height: 6vh;
+    background-image: url(../images/line_form_mobile.png);
+    background-repeat: no-repeat;
+    background-position: -60%;
+    background-size: 60%;
+}
+.form__title {
+    font-family: 'Jennerik', sans-serif;
+    color: #2c323e;
+    margin-bottom: 3vmax;
+    font-size: 20px;
+}
+.form__email {
+    border-bottom: 1px solid #f1bf35;
+    color:#f1bf35;
+    font-family: 'Ibarra Real Nova';
+    font-size: 12px;
+    padding: 0.5vmax 0;
+    width: 100%;
+}
+.form__title_input {
+    color:#f1bf35;
+    margin-bottom: 2vmax;
+    font-size: 18px;
+    font-family: 'Ibarra Real Nova';
+}
+#form_email {
+    border: none;
+    background: transparent;
+    width: 80%;
+    margin-bottom: 3vmax;
+}
+
+.form__date input{
+    border: none;
+    background: transparent;
+    color: #f1bf35;
+    font-size: 18px;
+    font-family: 'Ibarra Real Nova';
+    border-bottom: 1px solid #f1bf35;
+    margin-bottom: 3vmax;
+    text-transform: uppercase;
+}
+
+.form__list_questions{
+    list-style-type: none;
+    text-align: left;
+    color: #fff;
+    font-weight: lighter;
+    font-family: 'Ibarra Real Nova';
+}
+.form__list_questions li.show {
+    opacity: 1;
+    position: static;
+}
+.form__list_questions .form__question {
+    opacity: 0;
+    transition: 1s opacity;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50px;
+    right: 50px;
+}
+.form__question h4 {
+    font-weight: lighter;
+    margin-bottom: 2vmax;
+    font-size: 14px;
+    width: 100%;
+}
+.form__question h4 mark {
+    background: transparent;
+    color: #f1bf35;
+}
+.form__question {
+    width: 100%;
+    padding: 3vmax;
+    background: rgba(0, 0, 0, 0.192);
+    border-radius: 4vmax;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vmax;
+}
+.form__answer {
+    font-size: 14px;
+}
+.form__answer input {
+    color: #f1bf35;
+}
+.form__buttonProx {
+    width: 25%;
+    background: none;
+    border: none;
+    color: #f1bf35;
+    font-family: 'Ibarra Real Nova';
+    cursor: pointer;
+}
+.form__button {
+    display: block;
+    border-radius: 2vmax;
+    padding: 1vmax;
+    border: none;
+    width: 100%;
+    background: #f1bf35;
+    color:#2c323e;
+    font-family: 'Jennerik', sans-serif;
+}
+
+footer {
+    font-family: 'Ibarra Real Nova';
+}
+.footer__topContent {
+    padding: 4vmax;
+}
+.footer__title {
+    text-align: center;
+    font-family: 'Jennerik', sans-serif;
+    font-size: 20px;
+    padding: 0 4vmax;
+    color: #ef6e79;
+}
+.footer__imageProfile {
+    width: 90%;
+}
+.footer__content {
+    background-image: url(../images/background__footer__mobile.png);
+    background-size: 100%;
+    margin-top: -13vmax;
+    padding: 2vmax;
+    text-align: center;
+}
+.footer__content h2 {
+    color: #fff;
+    margin-top: 10vmax;
+    font-weight: lighter;
+    font-size: 19px;
+    margin-bottom: 2vmax;
+}
+.footer__content h3 {
+    color: #fff;
+    font-weight: lighter;
+    font-size: 16px;
+}
+.footer__content h4 {
+    color: #FFF;
+    font-weight: lighter;
+    font-size: 12px;
+}
+.footer__content p {
+    color: #f1bf35;
+    font-size: 12px;
+}
+.footer__presentation {
+    margin-bottom: 4vmax;
+}
+.footer__presentation h4 {
+    margin-bottom: 2vmax;
+}
+
+.footer__formation {
+    width: 100%;
+    list-style-position: inside;
+}
+.formation__list li {
+    color: #fff;
+    margin: 1vmax 0 1vmax 0;
+    font-size: 10px;
+}
+.footer__information {
+    padding: 4vmax;
+    font-family: 'Jennerik', sans-serif;
+}
+.footer__information h3 {
+    color: #f1bf35;
+    margin-bottom: 3vmax;
+    font-size: 14px;
+}
+.footer__information h3 small {
+    color: #fff;
+}
+.footer__information p {
+    color: #fff;
+    margin-bottom: 5vmax;
+}
+.footer__information p  mark {
+    color:#f1bf35;
+    background: transparent;
+}
+.footer__information img {
+    width: 70%;
+    margin-bottom: 4vmax;
+}
+.footer__information a {
+    text-align: center;
+    font-size: 8px;
+    width: 100%;
+    float: left;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: url(../images/brilho_background_desktop.png) ,url(../images/fundo_topo_desktop.png), url(../images/fundo_footer_desktop.png);
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+        background-position: top, top, bottom;
+    }
+    header {
+        text-align: center;
+        background: none;
+    }
+    .header__container {
+        display: grid;
+        grid-template-columns: 20% 30% 20%;
+        width: 80%;
+        margin-left: 4vmax;
+    }
+    .header__title {
+        font-family: 'Jennerik', sans-serif;
+        color: #2c323e;
+        margin-bottom: 2vmax;
+        float: left;
+        align-self: center;
+
+    }
+    .header__logo {
+        width: 100%;
+        margin-bottom: 2vmax;
+        float: left;
+    }
+    .header__content {
+        align-self: center;
+        padding-left: 2vmax;
+        text-align: left;
+    }
+    .header__slogan {
+        font-size: 18px;
+        margin-bottom: 2vmax;
+        font-weight: bold;
+    }
+    .header__logo_dra {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .article__principal {
+        padding: 0 20vmax;
+        background: none;
+    }
+    .header__description {
+        width: 80%;
+        text-align: left;
+        margin-bottom: 3vmax;
+    }
+    .article__text1 {
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+    .text_1 p {
+        text-indent: 0;
+        margin-bottom: 1.5vmax;
+    }
+    .text_1 {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: left;
+        margin-right: 2vmax;
+    }
+    .text_2 {
+        grid-column: 1 / 3;
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    .article__image_ramo {
+        background-image: url(../images/ramo_flor.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 60%;
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .article__text1 .text_2__lua {
+        grid-column: 1;
+        grid-row: 2;
+        width: 50%;
+        margin-bottom: 0;
+        margin-top: 3vmax;
+    }
+    .text_2 h2 {
+        grid-column: 2;
+        grid-row: 1;
+        margin-bottom: 1vmax;
+    }
+    .text_2_content {
+        grid-column: 2;
+        align-self: center;
+        text-align: left;
+    }
+    .text_2_content p {
+        margin-bottom: 1.5vmax;
+        text-indent: 0;
+        margin-left: 2vmax;
+    }
+    .header__description p {
+        font-size: 22px;
+        color: #fff;
+        font-family: 'Ibarra Real Nova';
+        text-align: left;
+    }
+    .header__description mark {
+        background-color: transparent;
+        color:#ef6e79;
+    }
+
+    .article__text2 {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    .article__text2 .article__content {
+        grid-column: 2;
+        text-align: left;
+    }
+    .article__text2 .article__content p {
+        margin-bottom: 0;
+        margin-left: 2vmax;
+    }
+    .article__text2 .article__image {
+        background-image: url(../images/lua_.png);
+        width: 70%;
+        height: 10vmax;
+        background-size: 80%;
+        grid-column: 1;
+        background-repeat: no-repeat;
+        margin-left: 8vmax;
+    }
+    .article__text3 {
+        margin: 3vmax 0;
+    }
+    .article__text3 .article__list_t3 li{
+        display: flex;
+    }
+    .article__list_t3 li hr{
+        border-color: #ef6e79;
+        margin: 0 1vmax;
+    }
+    .article__text4 {
+        text-align: left;
+    }
+
+    .section_form {
+        padding: 0 20vmax;
+        text-align: left;
+        background-image: url(../images/chuva_desktop.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .form__title {
+        text-align: left;
+        margin-top: 5vmax;
+    }
+    .form__top {
+        display: flex;
+    }
+    .form__title_input {
+        text-align: left;
+    }
+    #form_email {
+        width: 90%;
+    }
+    .form__date input{
+        width: 40%;
+    }
+    .form__list_questions .form__question {
+        background: none;
+        margin-bottom: 0;
+        padding: 1.5vmax 0;
+    }
+    .form__question .form__buttonProx {
+        display: none;
+    }
+    .form__image_flor {
+        background-image: url(../images/flor_.png);
+        width: 10vmax;
+        height: 10vmax;
+        background-position: 10% 20%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-left: 2vmax;
+    }
+    .section__line {
+        display: none;
+    }
+
+    .footer__line {
+        background-image: url(../images/line_footer_desktop.png);
+        background-size: 25%;
+        background-position: 20% 95%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 5vmax;
+    }
+
+    .footer__topContent {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 40% 30%;
+        margin-left: calc(50% - 30%);
+    }
+    .footer__topContent .footer__imageProfile {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+    }
+    .footer__topContent .footer__title {
+        grid-column: 2;
+        grid-row: 1;
+        padding: 0;
+        margin: 6vmax 0 0 1vmax;
+        text-align: left;
+    }
+    .footer__presentation {
+        text-align: left;
+        padding: 0 25vmax;
+    }
+    .footer__presentation h2 {
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+    .footer__presentation h3 {
+        color: #fff;
+        font-weight: lighter;
+        font-size: 16px;
+        float: left;
+    }
+    .footer__content p {
+        color: #f1bf35;
+        font-size: 14px;
+    }
+    .footer__presentation {
+        margin-bottom: 4vmax;
+    }
+    .footer__presentation h4 {
+        margin-bottom: 2vmax;
+    }
+
+    .footer__formation {
+        padding: 0 25vmax;
+        text-align: left;
+        list-style-position: outside;
+    }
+    .formation__list li {
+        font-size: 12px;
+    }
+
+    .footer__information {
+        padding: 0 25vmax;
+        margin-top: 5vmax;
+    }
+    .footer__information a {
+        font-size: 10px;
+    }
+    .footer__information img {
+        width: 20vmax;
+    }
+}
