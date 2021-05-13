@@ -35,6 +35,8 @@ header {
     width: 60%;
     margin-bottom: 2vmax;
 }
+
+
 .header__description {
     margin-bottom: 3vmax;
 }
@@ -47,14 +49,12 @@ header {
     background-color: transparent;
     color:#ef6e79;
 }
-
-
 .article__principal {
     padding: 0 4vmax;
     text-align: center;
     background-image: url(../images/lua_.png), url(../images/flor_.png);
     background-size: 15%, 10%;
-    background-position: -6% 20%, 98% 64%;
+    background-position: -6% 20%, 98% 67%;
     background-repeat: no-repeat;
 }
 .article__text1 p {
@@ -158,7 +158,6 @@ header {
     font-size: 18px;
     font-family: 'Ibarra Real Nova';
     border-bottom: 1px solid #f1bf35;
-    margin-bottom: 3vmax;
     text-transform: uppercase;
 }
 
@@ -181,6 +180,9 @@ header {
     left: 50px;
     right: 50px;
     z-index: -1;
+}
+.form__question p {
+    margin-bottom: 0.5vmax;
 }
 .form__question h4 {
     font-weight: lighter;
@@ -207,9 +209,6 @@ header {
 .form__answer {
     font-size: 14px;
 }
-.form__answer input {
-    color: #f1bf35;
-}
 .form__buttonControl {
     width: 25%;
     background: none;
@@ -227,6 +226,37 @@ header {
     background: #f1bf35;
     color:#2c323e;
     font-family: 'Jennerik', sans-serif;
+}
+input[type=radio], input[type=checkbox] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+input[type=radio] + label, input[type=checkbox] + label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 20px;
+}
+input[type=radio] + label::before, input[type=checkbox] + label::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: solid 1px;
+    vertical-align: bottom;
+}
+input[type=radio]:checked + label::after, input[type=checkbox]:checked + label::after {
+    content: "";
+    background-color: #f1bf35;
+    position: absolute;
+    left: 3px;
+    bottom: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
 }
 
 footer {
@@ -337,25 +367,28 @@ footer {
         display: grid;
         grid-template-columns: 20% 30% 20%;
         width: 80%;
-        margin-left: 4vmax;
+        margin-left: 8vmax;
     }
     .header__title {
         font-family: 'Jennerik', sans-serif;
         color: #2c323e;
-        margin-bottom: 2vmax;
-        float: left;
+        margin-bottom: 0;
         align-self: center;
-
+        grid-column: 1;
+        grid-row: 1;
     }
     .header__logo {
         width: 100%;
-        margin-bottom: 2vmax;
-        float: left;
+        margin-bottom: 0;
+        grid-column: 2;
+        grid-row: 1;
     }
     .header__content {
         align-self: center;
         padding-left: 2vmax;
         text-align: left;
+        grid-column: 3;
+        grid-row: 1;
     }
     .header__slogan {
         font-size: 18px;
@@ -368,7 +401,7 @@ footer {
     }
 
     .article__principal {
-        padding: 0 20vmax;
+        padding: 0 22vmax;
         background: none;
     }
     .header__description {
@@ -472,7 +505,7 @@ footer {
     }
 
     .section_form {
-        padding: 0 20vmax;
+        padding: 0 22vmax;
         text-align: left;
         background-image: url(../images/chuva_desktop.png);
         background-size: 100%;
@@ -494,13 +527,31 @@ footer {
     .form__date input{
         width: 40%;
     }
-    .form__list_questions .form__question {
+    .form__list_qw {
+        padding: 1.5vmax 0;
         background: none;
         margin-bottom: 0;
         padding: 1.5vmax 0;
     }
-    .form__question .form__buttonProx {
+    .form__list_questions .form__question {
+        opacity: 1;
+        transition: none;
+        box-sizing: border-box;
+        position: relative;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        margin-bottom: 2vmax;
+    }
+    .form__list_questions .form__question h4{
+        margin-bottom: 1vmax;
+    }
+    .form_questions_actions {
         display: none;
+    }
+    .form__button {
+        width: 60%;
+        padding: 0.5vmax 1vmax;
     }
     .form__image_flor {
         background-image: url(../images/flor_.png);
