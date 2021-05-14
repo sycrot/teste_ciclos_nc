@@ -201,7 +201,7 @@ header {
 }
 .form__list_qw {
     width: 100%;
-    padding: 3vmax;
+    padding: 6vmax 4vmax 2vmax 4vmax;
     background: rgba(0, 0, 0, 0.192);
     border-radius: 4vmax;
     margin: 3vmax 0;
@@ -210,19 +210,23 @@ header {
     font-size: 14px;
 }
 .form__buttonControl {
-    width: 25%;
+    width: 40%;
     background: none;
     border: none;
+    font-size: 18px;
+    font-weight: bolder;
     color: #f1bf35;
     font-family: 'Ibarra Real Nova';
     cursor: pointer;
 }
 .form__button {
-    display: block;
     border-radius: 2vmax;
     padding: 1vmax;
     border: none;
     width: 100%;
+    margin-top: 2vmax;
+    font-size: 14px;
+    white-space: normal;
     background: #f1bf35;
     color:#2c323e;
     font-family: 'Jennerik', sans-serif;
@@ -302,6 +306,8 @@ footer {
 .footer__content p {
     color: #f1bf35;
     font-size: 12px;
+    line-height: 2;
+    text-align: justify;
 }
 .footer__presentation {
     margin-bottom: 4vmax;
@@ -334,6 +340,8 @@ footer {
 .footer__information p {
     color: #fff;
     margin-bottom: 5vmax;
+    font-size: 14px;
+    text-align: center;
 }
 .footer__information p  mark {
     color:#f1bf35;
@@ -414,17 +422,17 @@ footer {
         display: grid;
         grid-template-columns: 70% 30%;
     }
-    .text_1 p {
+    .arcticle_t1_text_1 p {
         text-indent: 0;
         margin-bottom: 1.5vmax;
     }
-    .text_1 {
+    .arcticle_t1_text_1 {
         grid-column: 1;
         grid-row: 1;
         text-align: left;
         margin-right: 2vmax;
     }
-    .text_2 {
+    .arcticle_t1_text_2 {
         grid-column: 1 / 3;
         display: grid;
         grid-template-columns: 30% 70%;
@@ -445,7 +453,7 @@ footer {
         margin-bottom: 0;
         margin-top: 3vmax;
     }
-    .text_2 h2 {
+    .arcticle_t1_text_2 h2 {
         grid-column: 2;
         grid-row: 1;
         margin-bottom: 1vmax;
@@ -482,7 +490,7 @@ footer {
     .article__text2 .article__content p {
         margin-bottom: 0;
         margin-left: 2vmax;
-        font-size: 20px;
+        font-size: 18px;
     }
     .article__text2 .article__image {
         background-image: url(../images/lua_.png);
@@ -501,13 +509,13 @@ footer {
         grid-template-columns: 30% 70%;
     }
     .article__text3 .article__list_t3 h3 {
-        font-size: 20px;
+        font-size: 18px;
         padding-right: 1vmax;
         border-right: 2px solid #ef6e79;
         text-align: right;
     }
     .article__text3 .article__list_t3 p {
-        font-size: 20px;
+        font-size: 18px;
         text-align: left;
         padding-left: 1vmax;
     }
@@ -517,6 +525,9 @@ footer {
     }
     .article__text4 {
         text-align: left;
+    }
+    .article__text4 p {
+        font-size: 18px;
     }
 
     .section_form {
@@ -529,6 +540,7 @@ footer {
     .form__title {
         text-align: left;
         margin-top: 5vmax;
+        font-size: 22px;
     }
     .form__top {
         display: flex;
@@ -568,6 +580,7 @@ footer {
     .form__button {
         width: 60%;
         padding: 0.5vmax 1vmax;
+        margin-top: 6vmax;
     }
     .form__image_flor {
         background-image: url(../images/flor_.png);
@@ -623,15 +636,12 @@ footer {
         font-size: 16px;
         float: left;
     }
-    .footer__content p {
-        color: #f1bf35;
-        font-size: 14px;
-    }
     .footer__presentation {
         margin-bottom: 4vmax;
     }
     .footer__presentation h4 {
         margin-bottom: 2vmax;
+        margin-left: 2vmax;
     }
 
     .footer__formation {
@@ -649,6 +659,9 @@ footer {
     }
     .footer__information a {
         font-size: 10px;
+    }
+    .footer__information p{
+        text-align: center;
     }
     .footer__information img {
         width: 20vmax;
