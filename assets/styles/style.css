@@ -375,11 +375,10 @@ footer {
     /* Logo, ilustrações e fotos de fundo e da Dra. Fernanda */
 
     body {
-        background-image: url(../images/brilho_background_desktop.png) ,url(../images/fundo_topo_desktop.png), url(../images/fundo_footer_desktop.png);
+        background-image: radial-gradient(ellipse farthest-corner at 50% 30%, hsla(192, 94%, 87%, 0.205), transparent 50%), url(../images/fundo_topo_desktop.png), url(../images/fundo_footer_desktop.png);
         background-repeat: no-repeat;
-        background-size: 100%, 100%;
+        background-size: 100%, 100%, 100%;
         background-position: top, top, bottom;
-        perspective: 1px;
     }
     header {
         text-align: center;
@@ -432,6 +431,7 @@ footer {
         text-align: left;
         margin-bottom: 3vmax;
     }
+
     .article__text1 {
         display: grid;
         grid-template-columns: 70% 30%;
