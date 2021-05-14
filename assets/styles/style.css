@@ -2,17 +2,16 @@
 
 body {
     background: hsl(221, 17%, 48%);
+    background-image: url("../images/fundo_topo_mobile.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
+/* HEADER */
 header {
     width: 100%;
     padding: 4vmax;
     text-align: center;
-    background-image: url("../images/fundo_topo_mobile.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    perspective: 2px;
-    transform-style: preserve-3d;
 }
 .header__title {
     font-family: 'Jennerik', sans-serif;
@@ -22,8 +21,8 @@ header {
 .header__logo {
     width: 70%;
     margin-bottom: 2vmax;
-    -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.233));
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.233));
+    -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.310));
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.310));
 }
 .header__slogan {
     color: #f1bf35;
@@ -35,17 +34,18 @@ header {
     width: 60%;
     margin-bottom: 2vmax;
 }
+/* -HEADER END */
 
-
-.header__description {
+/* SECTION PRINCIPAL */
+.article__description {
     margin-bottom: 3vmax;
 }
-.header__description p {
+.article__description p {
     font-size: 22px;
     color: #fff;
     font-family: 'Ibarra Real Nova';
 }
-.header__description mark {
+.article__description mark {
     background-color: transparent;
     color:#ef6e79;
 }
@@ -116,7 +116,9 @@ header {
     background-color: transparent;
     color: #f1bf35;
 }
+/* SECTION PRINCIPAL - END */
 
+/* SECTION FORM */
 .section_form {
     padding: 0 4vmax;
     text-align: center;
@@ -269,7 +271,9 @@ input[type=radio]:checked + label::after, input[type=checkbox]:checked + label::
     height: 10px;
     border-radius: 50%;
 }
+/* SECTION FORM - END */
 
+/* FOOTER */
 footer {
     font-family: 'Ibarra Real Nova';
 }
@@ -369,6 +373,7 @@ footer {
     text-transform: uppercase;
     color: #fff;
 }
+/* FOOTER - END */
 
 @media screen and (min-width: 1024px) {
 
@@ -380,10 +385,8 @@ footer {
         background-size: 100%, 100%, 100%;
         background-position: top, top, bottom;
     }
-    header {
-        text-align: center;
-        background: none;
-    }
+
+    /* HEADER */
     .header__container {
         display: grid;
         grid-template-columns: 20% 30% 20%;
@@ -391,8 +394,6 @@ footer {
         margin-left: 8vmax;
     }
     .header__title {
-        font-family: 'Jennerik', sans-serif;
-        color: #2c323e;
         margin-bottom: 0;
         align-self: center;
         grid-column: 1;
@@ -421,12 +422,14 @@ footer {
         width: 100%;
         margin-bottom: 0;
     }
+    /* HEADER - END */
 
+    /* SECTION PRINCIPAL */
     .article__principal {
         padding: 0 22vmax;
         background: none;
     }
-    .header__description {
+    .article__description {
         width: 80%;
         text-align: left;
         margin-bottom: 3vmax;
@@ -484,16 +487,6 @@ footer {
         text-indent: 0;
         margin-left: 2vmax;
     }
-    .header__description p {
-        font-size: 22px;
-        color: #fff;
-        font-family: 'Ibarra Real Nova';
-        text-align: left;
-    }
-    .header__description mark {
-        background-color: transparent;
-        color:#ef6e79;
-    }
 
     .article__text2 {
         display: grid;
@@ -546,7 +539,9 @@ footer {
     .article__text4 p {
         font-size: 18px;
     }
+    /* SECTION PRINCIPAL - END */
 
+    /* SECTION FORM */
     .section_form {
         padding: 0 22vmax;
         text-align: left;
@@ -569,8 +564,11 @@ footer {
     #form_email {
         width: 90%;
     }
+    .form__date_title {
+        display: none;
+    }
     .form__date input{
-        width: 40%;
+        display: none;
     }
     .form__list_qw {
         background: none;
@@ -582,7 +580,6 @@ footer {
     .form__list_questions .form__question {
         opacity: 1;
         transition: none;
-        box-sizing: border-box;
         position: relative;
         left: 0;
         right: 0;
@@ -612,7 +609,9 @@ footer {
     .section__line {
         display: none;
     }
+    /* SECTION FORM - END */
 
+    /* FOOTER */
     .footer__line {
         background-image: url(../images/line_footer_desktop.png);
         background-size: 25%;
@@ -685,4 +684,5 @@ footer {
     .footer__information img {
         width: 20vmax;
     }
+    /* FOOTER - END */
 }
