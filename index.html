@@ -10,11 +10,11 @@
 
         <title>PROJETO CICLOS</title>
     </head>
-    <body>
+    <body class="rellax">
         <header>
-            <div class="header__container">
+            <div class="header__container rellax" data-rellax-speed="2">
                 <h1 class="header__title">PROJETO</h1>
-                <img src="assets/images/logo.png" alt="Logo ciclos" class="header__logo">
+                <img src="assets/images/logo.png" alt="Logo ciclos" class="header__logo" data-rellax-speed="1">
                 <div class="header__content">
                     <p class="header__slogan">A vida acontece em ciclos.</p>
                     <img src="assets/images/logo_fernanda.png" alt="logo Dra. Fernanda" class="header__logo_dra">
@@ -27,7 +27,7 @@
             </div>
             <article>
                 <div class="article__text1">
-                    <div class="article__image_ramo">
+                    <div class="article__image_ramo rellax" data-rellax-speed="1">
                     </div>
                     <div class="arcticle_t1_text_1">
                         <p> É uma inciativa que envolve <b>acolhimento</b>, mas que, por ironia do destino, nasce em meio ao isolamento social. Estamos passando por um momento ímpar da humanidade: o afastamento físico imposto por um vírus. Mas o ser humano se reinventou e se aproximou virtualmente.
@@ -47,7 +47,8 @@
                         <h2>
                             Isso também vai passar!
                         </h2>
-                        <img src="assets/images/lua_amarela.png" alt="Lua Amarela" class="text_2__lua">
+                        <div class="t1__text2_lua rellax" data-rellax-speed="0">
+                        </div>
                         <div class="text_2_content">
                             <p>
                                 Nosso objetivo, nesse momento, é <b>oferecer suporte</b> e ferramentas para que você passe por esse ciclo da melhor maneira possível. <b>Nossa munição, nessa batalha, é a informação.</b>
@@ -62,7 +63,7 @@
                     </div>
                 </div>
                 <div class="article__text2">
-                    <div class="article__image">
+                    <div class="article__image rellax" data-rellax-speed="0">
 
                     </div>
                     <div class="article__content">
@@ -104,7 +105,7 @@
             <form class="_form" action="" method="post">
                 <div class="form__top">
                     <h1 class="form__title">Formulário de participação dos encontros gratuitos e exclusivos</h1>
-                    <div class="form__image_flor"></div>
+                    <div class="form__image_flor rellax" data-rellax-speed="0"></div>
                 </div>
 
                 <h2 class="form__title_input">Endereço de e-mail<br><small>(o link exclusivo para participar dos encontros será enviado para seu e-mail):</small></h2>
@@ -261,8 +262,7 @@
             <div class="footer__content">
                 <div class="footer__presentation">
                     <h2>Dra. Fernanda Montenegro Valente</h2>
-                    <h3>Ginecologia e Obstetrícia</h3>
-                    <h4>CRM 118.913 • RQE 30.437</h4>
+                    <h3>Ginecologia e Obstetrícia<small> CRM 118.913 • RQE 30.437</small></h3>
 
                     <p>
                         Olá! Meu nome é Fernanda. Sou mãe e médica. Vivo em São Paulo, mas vim de longe, de Manaus. Morei em Jundiaí, onde fiz a Residência em Ginecologia e Obstetrícia. Há 13 anos, já em São Paulo, entrei no mundo da Reprodução Assistida para não mais sair. Diariamente participo do planejamento de famílias, de pessoas em busca de um sonho e de um tratamento, da melhor tecnologia, mas também do melhor acolhimento. Cada caso é único, cada um carrega sua alegria e sua dor, cada um segue em busca da sua grande transformação. Já cuidei de mais de 2 mil pacientes nessa jornada. Estar presente em todas as etapas do procedimento gera segurança, confiança e conforto. Aqui é onde me encontro: guiar famílias nessa jornada, com leveza e positivismo, é o que me faz feliz.
@@ -300,5 +300,9 @@
             
         </footer>
         <script src="assets/js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.js"></script>
+        <script>
+            var rellax = new Rellax('.rellax')
+        </script>
     </body>
 </html>

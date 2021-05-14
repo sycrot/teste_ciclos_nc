@@ -73,9 +73,14 @@ header {
     margin-bottom: 3vmax;
     font-family: 'Ibarra Real Nova';
 }
-.article__text1 .text_2__lua {
-    width: 10%;
+.article__text1 .t1__text2_lua {
+    width: 100%;
+    height: 10vmax;
     margin-bottom: 3vmax;
+    background-image: url(../images/lua_amarela.png);
+    background-size: 8vmax;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
 }
 
 .article__text2 p {
@@ -146,7 +151,9 @@ header {
 }
 #form_email {
     border: none;
-    background: transparent;
+    background: none;
+    color: #f1bf35;
+    margin-left: 1vmax;
     width: 80%;
     margin-bottom: 3vmax;
 }
@@ -297,16 +304,19 @@ footer {
     color: #fff;
     font-weight: lighter;
     font-size: 16px;
+    margin-bottom: 2vmax;
+    display: flex;
+    flex-direction: column;
 }
 .footer__content h4 {
     color: #FFF;
     font-weight: lighter;
     font-size: 12px;
 }
-.footer__content p {
+.footer__presentation p {
     color: #f1bf35;
-    font-size: 12px;
-    line-height: 2;
+    font-size: 14px;
+    line-height: 1.5;
     text-align: justify;
 }
 .footer__presentation {
@@ -361,11 +371,15 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+
+    /* Logo, ilustrações e fotos de fundo e da Dra. Fernanda */
+
     body {
         background-image: url(../images/brilho_background_desktop.png) ,url(../images/fundo_topo_desktop.png), url(../images/fundo_footer_desktop.png);
         background-repeat: no-repeat;
         background-size: 100%, 100%;
         background-position: top, top, bottom;
+        perspective: 1px;
     }
     header {
         text-align: center;
@@ -446,12 +460,14 @@ footer {
         grid-column: 2;
         grid-row: 1;
     }
-    .article__text1 .text_2__lua {
+    .article__text1 .t1__text2_lua {
         grid-column: 1;
         grid-row: 2;
-        width: 50%;
+        width: 100%;
+        height: 100%;
+        background-size: 10vmax;
+        background-position: 0 50%;
         margin-bottom: 0;
-        margin-top: 3vmax;
     }
     .arcticle_t1_text_2 h2 {
         grid-column: 2;
@@ -486,6 +502,7 @@ footer {
     .article__text2 .article__content {
         grid-column: 2;
         text-align: left;
+        margin-top: 1vmax;
     }
     .article__text2 .article__content p {
         margin-bottom: 0;
@@ -494,12 +511,12 @@ footer {
     }
     .article__text2 .article__image {
         background-image: url(../images/lua_.png);
-        width: 70%;
-        height: 10vmax;
-        background-size: 80%;
+        width: 100%;
+        height: 12vmax;
+        background-size: 12vmax;
         grid-column: 1;
         background-repeat: no-repeat;
-        margin-left: 8vmax;
+        margin-left: 5vmax;
     }
     .article__text3 {
         margin: 3vmax 0;
@@ -536,6 +553,7 @@ footer {
         background-image: url(../images/chuva_desktop.png);
         background-size: 100%;
         background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     .form__title {
         text-align: left;
@@ -630,20 +648,21 @@ footer {
         font-size: 26px;
         margin-bottom: 0;
     }
+    .footer__presentation h3 small::before {
+        content: " •";
+        font-size: 14px;
+    }
+    .footer__presentation h3 small {
+        font-size: 14px;
+        word-spacing: 3px;
+    }
     .footer__presentation h3 {
         color: #fff;
         font-weight: lighter;
-        font-size: 16px;
-        float: left;
-    }
-    .footer__presentation {
-        margin-bottom: 4vmax;
-    }
-    .footer__presentation h4 {
+        font-size: 18px;
+        display: block;
         margin-bottom: 2vmax;
-        margin-left: 2vmax;
     }
-
     .footer__formation {
         padding: 0 25vmax;
         text-align: left;
