@@ -1,6 +1,27 @@
 (function(){
     Ligthbox()
     CheckboxConfiguration()
+    parallax()
+
+    function parallax() {
+        let desktop = window.matchMedia('(min-width: 1024px)')
+        let classes = document.querySelectorAll('.rellax')
+        
+        function P(x) {
+            if(!x.matches) {
+                classes.forEach(e => {
+                    e.classList.remove('rellax')
+                })
+            } else {
+                classes.forEach(e => {
+                    e.classList.add('rellax')
+                })
+            }
+        }
+
+        P(desktop)
+        desktop.addListener(P)
+    }
 
     function CheckboxConfiguration() {
         let checkboxAnswers = document.getElementsByName('question4');
